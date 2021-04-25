@@ -1,6 +1,5 @@
 class UnitsController < ApplicationController
-    before_action :set_uf_by_date #, only: [:uf]
-
+    before_action :set_uf_by_date 
     def uf
         user = request.headers['X-CLIENTE']
         Request.create(user: user)
